@@ -1,0 +1,32 @@
+body {
+  background-color: black;
+  width: auto;
+  height: 100vh; /* Ensures the body fills the entire viewport height */
+  margin: 0; /* Remove default margin */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  overflow: hidden;
+  border-radius: 50%;
+  animation: spin 10s infinite linear;
+}
+
+.pedro {
+  scale: 1.1;
+  animation: bounce 200ms infinite linear;
+}
+
+@keyframes bounce {
+  to {
+    translate: 0 35px;
+  }
+}
+
+@keyframes spin {
+  to {
+    rotate: -1turn;
+  }
+}
